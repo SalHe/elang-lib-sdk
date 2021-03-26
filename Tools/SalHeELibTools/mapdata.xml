@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="GB2312"?>
+<Ex_DirectUI_MapData>
+	<!-- "@"前面为参数名称,可省略-->
+	<!-- "@"后面为数据类型,与易语言基本数据类型常量值一致-->
+	<!-- "@":1.字节型 2.短整数型 3.整数型 4.长整数型 5.小数型 6.双精度小数型 7.逻辑型 8.日期时间型 9.子程序指针型 10.文本型 11.字节集型-->
+	<!-- "#":参数末尾带此符号,说明该参数可空 -->
+	<!-- Call="1":说明该方法在创建消息发送之前被调用 -->
+	<Class Name="EventControl" Count="15"/>
+	<Class Name="BaseControl" BaseClass="EventControl" Count="75">
+		<Method Index="24" Name="TabStopIndex" Type="@3#"/>
+		<Method Index="35" Name="Tips" Type="@10#"/>
+		<Method Index="36" Name="Flags" Type="@10#"/>
+		<Method Index="41" Name="Alp" Type="@3#"/>
+		<Method Index="43" Name="AlpHitTest" Type="@7#"/>
+		<Method Index="44" Name="AnimationFramesAndTimer" Type="@3#,@3#"/>
+		<Method Index="47" Name="AnimationType" Type="@3#"/>
+		<Method Index="48" Name="Disable" Type="@7#"/>
+		<Method Index="54" Name="DropDrag" Type="@7#"/>
+		<Method Index="56" Name="LockPos" Type="@7#,@7#,@7#,@7#"/>
+		<Method Index="57" Name="FontName" Type="@10#"/>
+		<Method Index="58" Name="FontNameW" Type="@11#"/>
+		<Method Index="59" Name="FontStyle" Type="@3#"/>
+		<Method Index="60" Name="FontSize" Type="@3#"/>
+	</Class>
+	<Class Name="Label" BaseClass="BaseControl">
+		<Method Index="4" Name="Text" Type="@10#"/>
+		<Method Index="5" Name="TextW" Type="@11#"/>
+		<Method Index="6" Name="crText" Type="@3#"/>
+		<Method Index="7" Name="crShadow" Type="@3#"/>
+		<Method Index="8" Name="crBackground1" Type="@3#"/>
+		<Method Index="9" Name="crBackground2" Type="@3#"/>
+		<Method Index="10" Name="LineType" Type="@3#"/>
+		<Method Index="11" Name="HorzAlignMode" Type="@3#"/>
+		<Method Index="12" Name="VertAlignMode" Type="@3#"/>
+		<Method Index="13" Name="AutoCutLine" Type="@3#"/>
+		<Method Index="14" Name="TextEffect" Type="@3#"/>
+		<Method Index="15" Name="crBorder" Type="@3#"/>
+		<Method Index="16" Name="AutoSetColor" Type="@7#"/>
+	</Class>
+	<Class Name="ImageBox" BaseClass="BaseControl">
+		<Method Index="6" Name="Image" Type="@11#,@3#,@3#,@3#"/>
+		<Method Index="7" Name="Play" Type="@7#"/>
+		<Method Index="8" Name="crBackground" Type="@3#"/>
+		<Method Index="9" Name="crBorder" Type="@3#"/>
+		<Method Index="10" Name="Filltype" Type="@3#"/>
+		<Method Index="11" Name="Gird" Type="@5#,@5#,@5#,@5#"/>
+	</Class>
+	<Class Name="Button" BaseClass="BaseControl">
+		<Method Index="3" Name="Text" Type="@10#"/>
+		<Method Index="4" Name="TextW" Type="@11#"/>
+		<Method Index="5" Name="crText" Type="@3#"/>
+		<Method Index="6" Name="TextEffect" Type="@3#"/>
+		<Method Index="7" Name="crShadow" Type="@3#"/>
+		<Method Index="9" Name="Icon" Type="@11#"/>
+		<Method Index="10" Name="IconFlag" Type="@3#"/>
+		<Method Index="11" Name="OffsetX" Type="@3#"/>
+		<Method Index="12" Name="OffsetY" Type="@3#"/>
+		<Method Index="13" Name="Splitter" Type="@3#"/>
+	</Class>
+	<Class Name="Link" BaseClass="Label">
+		<Method Index="22" Name="LinkAddress" Type="@10#"/>
+		<Method Index="23" Name="LinkType" Type="@3#"/>
+		<Method Index="24" Name="crNormal" Type="@3#"/>
+		<Method Index="25" Name="crHighlight" Type="@3#"/>
+		<Method Index="26" Name="crVisited" Type="@3#"/>
+	</Class>
+	<Class Name="ImageButton" BaseClass="Button">
+		<Method Index="18" Name="ImgNormal" Type="@11#"/>
+		<Method Index="19" Name="ImgHighlight" Type="@11#"/>
+		<Method Index="20" Name="ImgDown" Type="@11#"/>
+		<Method Index="21" Name="ImgFocus" Type="@11#"/>
+		<Method Index="22" Name="ImgDisable" Type="@11#"/>
+		<Method Index="23" Name="FiilType" Type="@3#"/>
+		<Method Index="24" Name="Gird" Type="@5#,@5#,@5#,@5#"/>
+	</Class>
+	<Class Name="Edit" BaseClass="BaseControl">
+		<Method Index="47" Name="Scroll" Type="@3" Call="1"/>
+		<Method Index="42" Name="HideSel" Type="@7#"/>
+		<Method Index="43" Name="Align" Type="@3#"/>
+		<Method Index="44" Name="InputType" Type="@3#"/>
+		<Method Index="45" Name="PasswordChar" Type="@11#"/>
+		<Method Index="46" Name="Multiline" Type="@7#"/>
+		<Method Index="48" Name="LimitLen" Type="@3#"/>
+		<Method Index="49" Name="Caret" Type="@3#,@3#"/>
+		<Method Index="50" Name="Text" Type="@10#"/>
+		<Method Index="51" Name="TextW" Type="@11#"/>
+		<Method Index="52" Name="SelText" Type="@3#,@3"/>
+		<Method Index="53" Name="crText" Type="@3#"/>
+		<Method Index="54" Name="crTextSel" Type="@3#"/>
+		<Method Index="55" Name="crBorder" Type="@3#"/>
+		<Method Index="56" Name="crBackground" Type="@3#"/>
+		<Method Index="57" Name="crBackgroundSel" Type="@3#"/>
+		<Method Index="58" Name="bRich" Type="@7#"/>
+	</Class>
+	<Class Name="CheckButton" BaseClass="Button">
+		<Method Index="18" Name="Check" Type="@7#"/>
+	</Class>
+	<Class Name="RadioButton" BaseClass="Button">
+		<Method Index="19" Name="Check" Type="@7#"/>
+		<Method Index="20" Name="CheckIndex" Type="@3#"/>
+	</Class>
+	<Class Name="Progress" BaseClass="BaseControl">
+		<Method Index="2" Name="Pos" Type="@3#"/>
+		<Method Index="3" Name="crP1" Type="@3#"/>
+		<Method Index="4" Name="crP2" Type="@3#"/>
+		<Method Index="5" Name="crBackground" Type="@3#"/>
+	</Class>
+	<Class Name="ComboBox" BaseClass="BaseControl">
+		<Method Index="12" Name="Text" Type="@10#"/>
+		<Method Index="13" Name="TextW" Type="@11#"/>
+		<Method Index="14" Name="crText" Type="@3#"/>
+		<Method Index="15" Name="EditMode" Type="@7#"/>
+	</Class>
+	<Class Name="GroupBox" BaseClass="BaseControl">
+		<Method Index="4" Name="Text" Type="@10#"/>
+		<Method Index="5" Name="TextW" Type="@11#"/>
+		<Method Index="6" Name="crText" Type="@3#"/>
+		<Method Index="7" Name="crShadow" Type="@3#"/>
+		<Method Index="8" Name="crBackground" Type="@3#"/>
+		<Method Index="9" Name="Align" Type="@3#"/>
+		<Method Index="10" Name="TextEffect" Type="@3#"/>
+		<Method Index="11" Name="crBorder" Type="@3#"/>
+		<Method Index="12" Name="szBorder" Type="@3#"/>
+		<Method Index="13" Name="rdBorder" Type="@3#"/>
+	</Class>
+	<Class Name="ScrollBar" BaseClass="BaseControl">
+		<Method Index="11" Name="Pos" Type="@3#,@7#"/>
+		<Method Index="12" Name="MinPos" Type="@3#,@7#"/>
+		<Method Index="13" Name="MaxPos" Type="@3#,@7#"/>
+		<Method Index="14" Name="PageChange" Type="@3#"/>
+		<Method Index="15" Name="LineChange" Type="@3#"/>
+		<Method Index="16" Name="TrackEvent" Type="@7#"/>
+		<Method Index="17" Name="bFlags" Type="@3#"/>
+		<Method Index="18" Name="hFlags" Type="@3#"/>
+		<Method Index="19" Name="ViewPos" Type="@3#"/>
+	</Class>
+	<Class Name="ImageListButton" BaseClass="Button">
+		<Method Index="18" Name="Image" Type="@11#"/>
+		<Method Index="19" Name="ImageCount" Type="@3#"/>
+		<Method Index="20" Name="BlockSize" Type="@3#"/>
+		<Method Index="21" Name="FillType" Type="@3#"/>
+		<Method Index="22" Name="Gird" Type="@5#,@5#,@5#,@5#"/>
+	</Class>
+	<Class Name="ThunderButton" BaseClass="Button"/>
+	<Class Name="Page" BaseClass="BaseControl"/>
+</Ex_DirectUI_MapData>
